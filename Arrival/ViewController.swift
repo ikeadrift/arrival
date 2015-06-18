@@ -43,18 +43,18 @@ class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource {
        
         self.view.addSubview(swipeView!)
         
+        let refreshButton = UIButton 
     }
     
     
     //MARK: dataSource
     
     func numberOfItemsInSwipeView(swipeView: SwipeView!) -> Int {
-        return database.sharedInstance().getViewArray().count
+        return database.sharedInstance().viewArray.count
     }
     func swipeView(swipeView: SwipeView!, viewForItemAtIndex index: Int, reusingView view: UIView!) -> UIView! {
-        let array = database.sharedInstance().getViewArray()
-        let dict = array[Int(index)] as! NSDictionary
-        let view = dict["expandedView"] as! UIView
+        let array = database.sharedInstance().viewArray
+        let view = (array as Array)[index] as! UIView
         view.frame = self.view.bounds
         return view
     }

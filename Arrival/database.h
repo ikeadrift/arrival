@@ -10,6 +10,6 @@
 
 @interface database : NSObject
 
--(NSArray*)getViewArray;
-+(id)sharedInstance;
+@property (nonatomic, strong) NSMutableArray* viewArray;
++(database *)sharedInstance;
 @end
