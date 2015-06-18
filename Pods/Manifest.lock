@@ -1,0 +1,10 @@
+PODS:
+  - APPaginalTableView (1.0.0)
+
+DEPENDENCIES:
+  - APPaginalTableView
+
+SPEC CHECKSUMS:
+  APPaginalTableView: 0dabc71a767c4fd914633493e8bbbd649d591759
+
+COCOAPODS: 0.37.2
