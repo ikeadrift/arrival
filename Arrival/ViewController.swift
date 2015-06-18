@@ -29,11 +29,11 @@ import UIKit
 
 class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalTableViewDelegate {
     
-    var paginalTableView: APPaginalTableView = APPaginalTableView(frame: self.view.bounds)
-
+    var paginalTableView: APPaginalTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        paginalTableView =  = APPaginalTableView(frame: self.view.bounds)
         self.view.backgroundColor = UIColor.blackColor()
         paginalTableView.delegate = self
         paginalTableView.dataSource = self
@@ -45,15 +45,15 @@ class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalT
     //MARK: dataSource
     
     func numberOfElementsInPaginalTableView(paginalTableView: APPaginalTableView!) -> UInt {
-        return 3
+        return database.getViewArray().count
     }
     
     func paginalTableView(paginalTableView: APPaginalTableView!, collapsedViewAtIndex index: UInt) -> UIView! {
-        return nil
+        return database.getViewArray()[index]["collapsedView"]
     }
     
     func paginalTableView(paginalTableView: APPaginalTableView!, expandedViewAtIndex index: UInt) -> UIView! {
-        return nil
+        return database.getViewArray()[index]["expandedView"]
     }
     
     //MARK: delegate
@@ -63,7 +63,7 @@ class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalT
     }
     
     func paginalTableView(paginalTableView: APPaginalTableView!, didSelectRowAtIndex index: UInt) {
-        paginalTableView.openElementAtIndex(index: index, completion: nil, animated: true)
+        paginalTableView.openElementAtIndex(index, completion: nil, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

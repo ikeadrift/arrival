@@ -14,15 +14,15 @@
 +(NSArray*)getViewArray{
     return @[
       @{
-          @"collapsedController"    :   [UIView new],
-          @"expandedController"    :   [UIView new],
+          @"collapsedView"    :   [UIView new],
+          @"expandedView"    :   [UIView new],
           
           
           },
       
       @{
-          @"collapsedController"    :   [UIView new],
-          @"expandedController"    :   [UIView new],
+          @"collapsedView"    :   [UIView new],
+          @"expandedView"    :   [UIView new],
           
           
           }
