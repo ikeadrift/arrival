@@ -46,6 +46,7 @@ class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalT
     
     func numberOfElementsInPaginalTableView(paginalTableView: APPaginalTableView!) -> UInt {
         return UInt(database.sharedInstance().getViewArray().count)
+		
     }
     
     func paginalTableView(paginalTableView: APPaginalTableView!, collapsedViewAtIndex index: UInt) -> UIView! {

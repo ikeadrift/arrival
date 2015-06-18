@@ -392,7 +392,7 @@ NSUInteger kAPPaginalTableViewSection = 0;
     }
     
     if (self.isInPaginalPresentation == NO) {
-        APPaginalTableViewElement *view = _elementViews[indexPath.row];
+        APPaginalTableViewElement *view = _elementViews[indexPath.row - 1];
         [cell.contentView addSubview:view];
     }
     
