@@ -33,7 +33,7 @@ class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalT
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        paginalTableView =  = APPaginalTableView(frame: self.view.bounds)
+        paginalTableView = APPaginalTableView(frame: self.view.bounds)
         self.view.backgroundColor = UIColor.blackColor()
         paginalTableView.delegate = self
         paginalTableView.dataSource = self
@@ -45,17 +45,25 @@ class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalT
     //MARK: dataSource
     
     func numberOfElementsInPaginalTableView(paginalTableView: APPaginalTableView!) -> UInt {
-        return database.getViewArray().count
+        return UInt(database.getViewArray().count)
     }
     
     func paginalTableView(paginalTableView: APPaginalTableView!, collapsedViewAtIndex index: UInt) -> UIView! {
-        return database.getViewArray()[index]["collapsedView"]
+		let array = database.getViewArray()
+		let dict = array[Int(index)] as! NSDictionary
+		let view = dict["collapsedView"] as! UIView
+		
+        return view
     }
     
     func paginalTableView(paginalTableView: APPaginalTableView!, expandedViewAtIndex index: UInt) -> UIView! {
-        return database.getViewArray()[index]["expandedView"]
+		let array = database.getViewArray()
+		let dict = array[Int(index)] as! NSDictionary
+		let view = dict["expandedView"] as! UIView
+		
+		return view
     }
-    
+	
     //MARK: delegate
     
     func paginalTableView(paginalTableView: APPaginalTableView!, openElementAtIndex index: UInt, onChangeHeightFrom initialHeight: CGFloat, toHeight finalHeight: CGFloat) -> Bool {
