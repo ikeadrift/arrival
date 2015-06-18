@@ -27,53 +27,39 @@
 
 import UIKit
 
-class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalTableViewDelegate {
+class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource {
     
-    var paginalTableView: APPaginalTableView!
+    var swipeView: SwipeView?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        paginalTableView = APPaginalTableView(frame: self.view.bounds)
+        self.swipeView = SwipeView(frame: self.view.bounds)
+        swipeView?.dataSource = self
+        swipeView?.delegate = self
+        
+        
+        
         self.view.backgroundColor = UIColor.blackColor()
-        paginalTableView.delegate = self
-        paginalTableView.dataSource = self
-        self.view.addSubview(paginalTableView)
+       
+        self.view.addSubview(swipeView!)
         
     }
     
     
     //MARK: dataSource
     
-    func numberOfElementsInPaginalTableView(paginalTableView: APPaginalTableView!) -> UInt {
-        return UInt(database.sharedInstance().getViewArray().count)
-		
+    func numberOfItemsInSwipeView(swipeView: SwipeView!) -> Int {
+        return database.sharedInstance().getViewArray().count
     }
-    
-    func paginalTableView(paginalTableView: APPaginalTableView!, collapsedViewAtIndex index: UInt) -> UIView! {
-		let array = database.sharedInstance().getViewArray()
-		let dict = array[Int(index)] as! NSDictionary
-		let view = dict["collapsedView"] as! UIView
-		
+    func swipeView(swipeView: SwipeView!, viewForItemAtIndex index: Int, reusingView view: UIView!) -> UIView! {
+        let array = database.sharedInstance().getViewArray()
+        let dict = array[Int(index)] as! NSDictionary
+        let view = dict["expandedView"] as! UIView
+        view.frame = self.view.bounds
         return view
     }
     
-    func paginalTableView(paginalTableView: APPaginalTableView!, expandedViewAtIndex index: UInt) -> UIView! {
-		let array = database.sharedInstance().getViewArray()
-		let dict = array[Int(index)] as! NSDictionary
-		let view = dict["expandedView"] as! UIView
-		
-		return view
-    }
-	
     //MARK: delegate
-    
-    func paginalTableView(paginalTableView: APPaginalTableView!, openElementAtIndex index: UInt, onChangeHeightFrom initialHeight: CGFloat, toHeight finalHeight: CGFloat) -> Bool {
-        return true
-    }
-    
-    func paginalTableView(paginalTableView: APPaginalTableView!, didSelectRowAtIndex index: UInt) {
-        paginalTableView.openElementAtIndex(index, completion: nil, animated: true)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

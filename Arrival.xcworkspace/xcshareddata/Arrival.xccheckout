@@ -12,8 +12,6 @@
 	<dict>
 		<key>4A065C0857DF11F6B9B8C47B8851FF4EAFC3F200</key>
 		<string>https://github.com/benzweig/arrival.git</string>
-		<key>C663044A1215EDAE9BFEE2935FD16744DA3876FB</key>
-		<string>https://github.com/nicklockwood/SwipeView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Arrival.xcworkspace</string>
@@ -21,8 +19,6 @@
 	<dict>
 		<key>4A065C0857DF11F6B9B8C47B8851FF4EAFC3F200</key>
 		<string>..</string>
-		<key>C663044A1215EDAE9BFEE2935FD16744DA3876FB</key>
-		<string>..SwipeView/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/benzweig/arrival.git</string>
@@ -39,14 +35,6 @@
 			<string>4A065C0857DF11F6B9B8C47B8851FF4EAFC3F200</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Arrival</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C663044A1215EDAE9BFEE2935FD16744DA3876FB</string>
-			<key>IDESourceControlWCCName</key>
-			<string>SwipeView</string>
 		</dict>
 	</array>
 </dict>

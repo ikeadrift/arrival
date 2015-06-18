@@ -27,15 +27,8 @@
     
     
     return @[
-      @{
-          @"collapsedView"    :   self.collapsedView1,
-          @"expandedView"    :   self.expandedView1
-          },
-      
-      @{
-          @"collapsedView"    :   self.collapsedView2,
-          @"expandedView"    :   self.expandedView2
-          }
+             self.collapsedView1,
+             self.collapsedView2
       ];
 }
 
