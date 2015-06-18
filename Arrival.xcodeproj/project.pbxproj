@@ -38,6 +38,7 @@
 		0223DD261B32A2CD00E33B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0223DD271B32A2CD00E33B8C /* ArrivalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTests.swift; sourceTree = "<group>"; };
 		02F7BC191B32A67200E2A7F7 /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = SOURCE_ROOT; };
+		02F7BC1D1B32A7E100E2A7F7 /* Arrival-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Arrival-Bridging-Header.h"; sourceTree = "<group>"; };
 		168F35B5CF818F0383CA7F57 /* libPods-Arrival.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arrival.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25160507B30A5A8728E21878 /* Pods-Arrival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arrival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Arrival/Pods-Arrival.debug.xcconfig"; sourceTree = "<group>"; };
 		A3000C780B373F0BEDD049BA /* Pods-Arrival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arrival.release.xcconfig"; path = "Pods/Target Support Files/Pods-Arrival/Pods-Arrival.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 				0223DD1A1B32A2CD00E33B8C /* LaunchScreen.xib */,
 				02F7BC191B32A67200E2A7F7 /* podfile */,
 				0223DD0F1B32A2CD00E33B8C /* Supporting Files */,
+				02F7BC1D1B32A7E100E2A7F7 /* Arrival-Bridging-Header.h */,
 			);
 			path = Arrival;
 			sourceTree = "<group>";
@@ -404,9 +406,12 @@
 			baseConfigurationReference = 25160507B30A5A8728E21878 /* Pods-Arrival.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Arrival/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Arrival/Arrival-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -415,9 +420,11 @@
 			baseConfigurationReference = A3000C780B373F0BEDD049BA /* Pods-Arrival.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Arrival/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Arrival/Arrival-Bridging-Header.h";
 			};
 			name = Release;
 		};
