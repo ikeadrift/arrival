@@ -11,22 +11,28 @@
 
 @implementation database
 
-+(NSArray*)getViewArray{
+-(NSArray*)getViewArray{
     return @[
       @{
           @"collapsedView"    :   [UIView new],
           @"expandedView"    :   [UIView new],
-          
-          
           },
       
       @{
           @"collapsedView"    :   [UIView new],
           @"expandedView"    :   [UIView new],
-          
-          
           }
       ];
+}
+
++ (id)sharedInstance
+{
+    static database *sharedDatabase = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedDatabase = [[self alloc] init];
+    });
+    return sharedDatabase;
 }
 
 @end

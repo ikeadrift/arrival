@@ -45,11 +45,11 @@ class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalT
     //MARK: dataSource
     
     func numberOfElementsInPaginalTableView(paginalTableView: APPaginalTableView!) -> UInt {
-        return UInt(database.getViewArray().count)
+        return UInt(database.sharedInstance().getViewArray().count)
     }
     
     func paginalTableView(paginalTableView: APPaginalTableView!, collapsedViewAtIndex index: UInt) -> UIView! {
-		let array = database.getViewArray()
+		let array = database.sharedInstance().getViewArray()
 		let dict = array[Int(index)] as! NSDictionary
 		let view = dict["collapsedView"] as! UIView
 		
@@ -57,7 +57,7 @@ class ViewController: UIViewController, APPaginalTableViewDataSource, APPaginalT
     }
     
     func paginalTableView(paginalTableView: APPaginalTableView!, expandedViewAtIndex index: UInt) -> UIView! {
-		let array = database.getViewArray()
+		let array = database.sharedInstance().getViewArray()
 		let dict = array[Int(index)] as! NSDictionary
 		let view = dict["expandedView"] as! UIView
 		

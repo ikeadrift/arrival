@@ -10,6 +10,6 @@
 
 @interface database : NSObject
 
-+(NSArray*)getViewArray;
-
+-(NSArray*)getViewArray;
++(id)sharedInstance;
 @end
