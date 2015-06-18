@@ -19,26 +19,33 @@
 @implementation database
 
 -(NSArray*)getViewArray{
-    self.collapsedView1 = self.collapsedView1 ? self.collapsedView1 : [UIView new];
-    self.collapsedView2 = self.collapsedView2 ? self.collapsedView2 : [UIView new];
-    self.expandedView1 = self.expandedView1 ? self.expandedView1 : [UIView new];
-    self.expandedView2 = self.expandedView2 ? self.expandedView2 : [UIView new];
+    self.collapsedView1 = self.collapsedView1 ? self.collapsedView1 : [self coloredView:[UIColor greenColor]];
+    self.collapsedView2 = self.collapsedView2 ? self.collapsedView2 : [self coloredView:[UIColor orangeColor]];
+    self.expandedView1 = self.expandedView1 ? self.expandedView1 : [self coloredView:[UIColor redColor]];
+    self.expandedView2 = self.expandedView2 ? self.expandedView2 : [self coloredView:[UIColor blueColor]];
+    
     
     
     return @[
       @{
-          @"collapsedView"    :   [UIView new],
-          @"expandedView"    :   [UIView new],
+          @"collapsedView"    :   self.collapsedView1,
+          @"expandedView"    :   self.expandedView1
           },
       
       @{
-          @"collapsedView"    :   [UIView new],
-          @"expandedView"    :   [UIView new],
+          @"collapsedView"    :   self.collapsedView2,
+          @"expandedView"    :   self.expandedView2
           }
       ];
 }
 
-+ (id)sharedInstance
+-(UIView *) coloredView:(UIColor *) color{
+    UIView * view = [UIView new];
+    view.backgroundColor = color;
+    return view;
+}
+
++(id)sharedInstance
 {
     static database *sharedDatabase = nil;
     static dispatch_once_t onceToken;
