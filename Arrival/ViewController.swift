@@ -26,8 +26,9 @@
 
 
 import UIKit
+import HILBartWebData
 
-class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource {
+class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource, NSURLConnectionDataDelegate {
     
     var swipeView: SwipeView?
     override func viewDidLoad() {
@@ -38,7 +39,9 @@ class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource {
         swipeView?.delegate = self
         
         
-        
+        let bartData = HILBartData()
+		bartData.getRouteInfo(station.Rockridge, destination: station.Powell)
+		
         self.view.backgroundColor = UIColor.blackColor()
        
         self.view.addSubview(swipeView!)
@@ -69,6 +72,12 @@ class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource {
         view.frame = self.view.bounds
         return view
     }
+	
+	func connection(connection: NSURLConnection, didReceiveData data: NSData) {
+		println(NSString(data: data, encoding: NSUTF8StringEncoding))
+	}
+	
+	
     
     //MARK: delegate
 
