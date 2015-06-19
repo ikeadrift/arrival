@@ -43,9 +43,20 @@ class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource {
        
         self.view.addSubview(swipeView!)
         
-        let refreshButton = UIButton 
+        let refreshButton = UIButton(frame: CGRectMake(20, 20, 100, 30))
+        refreshButton.setTitle("refresh", forState: .Normal)
+        refreshButton.addTarget(self, action: "setColors", forControlEvents: .TouchUpInside)
+        self.view.addSubview(refreshButton)
     }
     
+    func setColors() {
+        var array = Array<UIView>()
+        array.append(database.sharedInstance().coloredView(UIColor.blackColor()))
+        array.append(database.sharedInstance().coloredView(UIColor.redColor()))
+        let mutableArray = NSMutableArray(array: array)
+        database.sharedInstance().viewArray = mutableArray
+        self.swipeView?.reloadData()
+    }
     
     //MARK: dataSource
     

@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface database : NSObject
 
 @property (nonatomic, strong) NSMutableArray* viewArray;
 +(database *)sharedInstance;
+-(UIView *)coloredView: (UIColor*)color;
 @end
