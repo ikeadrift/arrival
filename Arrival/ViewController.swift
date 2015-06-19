@@ -40,6 +40,7 @@ class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource, 
         
         
         let bartData = HILBartData()
+        bartData.delegate = self
 		bartData.getRouteInfo(station.Rockridge, destination: station.Powell)
 		
         self.view.backgroundColor = UIColor.blackColor()
