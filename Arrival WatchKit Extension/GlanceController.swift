@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import HILBartWebData
 
 
 
@@ -16,7 +16,7 @@ class GlanceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-		
+		let bartData = HILBartData()
 
         
         // Configure interface objects here.

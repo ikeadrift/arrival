@@ -8,6 +8,6 @@
 
 import UIKit
 
-class HILBartData: NSObject {
+public class HILBartData: NSObject {
    
 }
