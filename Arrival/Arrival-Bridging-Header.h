@@ -4,3 +4,5 @@
 
 #import "SwipeView.h"
 #import "database.h"
+#import <HILBartWebData/XMLBartData.h>
+#import <HILBartWebData/HILBartWebData.h>

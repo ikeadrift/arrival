@@ -1,3 +1,6 @@
 [submodule "SwipeView"]
 	path = SwipeView
 	url = https://github.com/nicklockwood/SwipeView.git
+[submodule "XMLDictionary"]
+	path = XMLDictionary
+	url = https://github.com/nicklockwood/XMLDictionary.git

@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>HILBartWeb.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>HILBartWebData.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +53,26 @@
 			<true/>
 		</dict>
 		<key>02E4A1AE1B33FACD009B8A0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02E4A1D91B340FCD009B8A0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02E4A1E31B340FCD009B8A0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02E4A2001B34110A009B8A0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02E4A20A1B34110A009B8A0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

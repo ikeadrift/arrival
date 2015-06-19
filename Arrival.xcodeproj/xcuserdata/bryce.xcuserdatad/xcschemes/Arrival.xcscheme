@@ -48,6 +48,20 @@
                ReferencedContainer = "container:Arrival.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "02E4A1E31B340FCD009B8A0F"
+               BuildableName = "HILBartWebTests.xctest"
+               BlueprintName = "HILBartWebTests"
+               ReferencedContainer = "container:Arrival.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -73,6 +87,16 @@
                BlueprintIdentifier = "02E4A1AE1B33FACD009B8A0F"
                BuildableName = "HILBartWebDataTests.xctest"
                BlueprintName = "HILBartWebDataTests"
+               ReferencedContainer = "container:Arrival.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "02E4A1E31B340FCD009B8A0F"
+               BuildableName = "HILBartWebTests.xctest"
+               BlueprintName = "HILBartWebTests"
                ReferencedContainer = "container:Arrival.xcodeproj">
             </BuildableReference>
          </TestableReference>

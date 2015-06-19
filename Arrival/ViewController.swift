@@ -26,7 +26,7 @@
 
 
 import UIKit
-import HILBartWebData
+import HILBartWeb
 
 class ViewController: UIViewController, SwipeViewDelegate, SwipeViewDataSource, NSURLConnectionDataDelegate {
     

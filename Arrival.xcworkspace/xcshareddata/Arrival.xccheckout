@@ -12,6 +12,8 @@
 	<dict>
 		<key>4A065C0857DF11F6B9B8C47B8851FF4EAFC3F200</key>
 		<string>https://github.com/benzweig/arrival.git</string>
+		<key>A7B927C638033B725B7749AC2AF16C72A0DF71F3</key>
+		<string>https://github.com/nicklockwood/XMLDictionary.git</string>
 		<key>C663044A1215EDAE9BFEE2935FD16744DA3876FB</key>
 		<string>https://github.com/nicklockwood/SwipeView.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>4A065C0857DF11F6B9B8C47B8851FF4EAFC3F200</key>
 		<string>..</string>
+		<key>A7B927C638033B725B7749AC2AF16C72A0DF71F3</key>
+		<string>../XMLDictionary/</string>
 		<key>C663044A1215EDAE9BFEE2935FD16744DA3876FB</key>
 		<string>..SwipeView</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>C663044A1215EDAE9BFEE2935FD16744DA3876FB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ArrivalSwipeView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A7B927C638033B725B7749AC2AF16C72A0DF71F3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XMLDictionary</string>
 		</dict>
 	</array>
 </dict>

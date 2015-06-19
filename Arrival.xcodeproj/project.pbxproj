@@ -13,14 +13,13 @@
 		0223DD191B32A2CD00E33B8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0223DD181B32A2CD00E33B8C /* Images.xcassets */; };
 		0223DD1C1B32A2CD00E33B8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0223DD1A1B32A2CD00E33B8C /* LaunchScreen.xib */; };
 		0223DD281B32A2CD00E33B8C /* ArrivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0223DD271B32A2CD00E33B8C /* ArrivalTests.swift */; };
-		02E4A1AA1B33FACD009B8A0F /* HILBartWebData.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E4A1A91B33FACD009B8A0F /* HILBartWebData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02E4A1B01B33FACD009B8A0F /* HILBartWebData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E4A1A51B33FACD009B8A0F /* HILBartWebData.framework */; };
-		02E4A1B91B33FACD009B8A0F /* HILBartWebDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4A1B81B33FACD009B8A0F /* HILBartWebDataTests.swift */; };
-		02E4A1BC1B33FACD009B8A0F /* HILBartWebData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E4A1A51B33FACD009B8A0F /* HILBartWebData.framework */; };
-		02E4A1BD1B33FACD009B8A0F /* HILBartWebData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E4A1A51B33FACD009B8A0F /* HILBartWebData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		02E4A1C61B33FB3C009B8A0F /* HILBartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4A1C51B33FB3C009B8A0F /* HILBartData.swift */; };
-		02E4A1C71B33FB63009B8A0F /* HILBartWebData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E4A1A51B33FACD009B8A0F /* HILBartWebData.framework */; };
-		02E4A1C81B33FB63009B8A0F /* HILBartWebData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E4A1A51B33FACD009B8A0F /* HILBartWebData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02E4A2041B34110A009B8A0F /* HILBartWebData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 02E4A2031B34110A009B8A0F /* HILBartWebData.h */; };
+		02E4A2061B34110A009B8A0F /* HILBartWebData.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E4A2051B34110A009B8A0F /* HILBartWebData.m */; };
+		02E4A20C1B34110A009B8A0F /* libHILBartWebData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E4A2011B34110A009B8A0F /* libHILBartWebData.a */; };
+		02E4A2181B34111F009B8A0F /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E4A1CD1B3409F4009B8A0F /* XMLDictionary.m */; };
+		02E4A2191B341121009B8A0F /* HILBartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E4A1D21B340A9C009B8A0F /* HILBartData.m */; };
+		02E4A21A1B34113E009B8A0F /* libHILBartWebData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E4A2011B34110A009B8A0F /* libHILBartWebData.a */; };
+		02E4A21B1B34114B009B8A0F /* libHILBartWebData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E4A2011B34110A009B8A0F /* libHILBartWebData.a */; };
 		02F7BC231B32B99E00E2A7F7 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F7BC221B32B99E00E2A7F7 /* SwipeView.m */; };
 		629BE7411B32AE91000CBBEC /* database.m in Sources */ = {isa = PBXBuildFile; fileRef = 629BE7401B32AE91000CBBEC /* database.m */; };
 		629BE74C1B33F639000CBBEC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629BE74B1B33F639000CBBEC /* InterfaceController.swift */; };
@@ -42,32 +41,11 @@
 			remoteGlobalIDString = 0223DD0B1B32A2CD00E33B8C;
 			remoteInfo = Arrival;
 		};
-		02E4A1B11B33FACD009B8A0F /* PBXContainerItemProxy */ = {
+		02E4A20D1B34110A009B8A0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0223DD041B32A2CD00E33B8C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02E4A1A41B33FACD009B8A0F;
-			remoteInfo = HILBartWebData;
-		};
-		02E4A1B31B33FACD009B8A0F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0223DD041B32A2CD00E33B8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0223DD0B1B32A2CD00E33B8C;
-			remoteInfo = Arrival;
-		};
-		02E4A1BA1B33FACD009B8A0F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0223DD041B32A2CD00E33B8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 02E4A1A41B33FACD009B8A0F;
-			remoteInfo = HILBartWebData;
-		};
-		02E4A1C91B33FB63009B8A0F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0223DD041B32A2CD00E33B8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 02E4A1A41B33FACD009B8A0F;
+			remoteGlobalIDString = 02E4A2001B34110A009B8A0F;
 			remoteInfo = HILBartWebData;
 		};
 		629BE7571B33F639000CBBEC /* PBXContainerItemProxy */ = {
@@ -93,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				02E4A1BD1B33FACD009B8A0F /* HILBartWebData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,9 +81,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				02E4A1C81B33FB63009B8A0F /* HILBartWebData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E4A1FF1B34110A009B8A0F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				02E4A2041B34110A009B8A0F /* HILBartWebData.h in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		629BE76A1B33F639000CBBEC /* Embed App Extensions */ = {
@@ -133,13 +119,15 @@
 		0223DD211B32A2CD00E33B8C /* ArrivalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrivalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0223DD261B32A2CD00E33B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0223DD271B32A2CD00E33B8C /* ArrivalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTests.swift; sourceTree = "<group>"; };
-		02E4A1A51B33FACD009B8A0F /* HILBartWebData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HILBartWebData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02E4A1A81B33FACD009B8A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02E4A1A91B33FACD009B8A0F /* HILBartWebData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HILBartWebData.h; sourceTree = "<group>"; };
-		02E4A1AF1B33FACD009B8A0F /* HILBartWebDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HILBartWebDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02E4A1B71B33FACD009B8A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02E4A1B81B33FACD009B8A0F /* HILBartWebDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HILBartWebDataTests.swift; sourceTree = "<group>"; };
-		02E4A1C51B33FB3C009B8A0F /* HILBartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HILBartData.swift; sourceTree = "<group>"; };
+		02E4A1CC1B3409F4009B8A0F /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDictionary.h; path = XMLDictionary/XMLDictionary/XMLDictionary.h; sourceTree = SOURCE_ROOT; };
+		02E4A1CD1B3409F4009B8A0F /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDictionary.m; path = XMLDictionary/XMLDictionary/XMLDictionary.m; sourceTree = SOURCE_ROOT; };
+		02E4A1D11B340A9C009B8A0F /* HILBartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HILBartData.h; path = HILBartWebData/HILBartData.h; sourceTree = SOURCE_ROOT; };
+		02E4A1D21B340A9C009B8A0F /* HILBartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HILBartData.m; path = HILBartWebData/HILBartData.m; sourceTree = SOURCE_ROOT; };
+		02E4A2011B34110A009B8A0F /* libHILBartWebData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHILBartWebData.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E4A2031B34110A009B8A0F /* HILBartWebData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HILBartWebData.h; sourceTree = "<group>"; };
+		02E4A2051B34110A009B8A0F /* HILBartWebData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HILBartWebData.m; sourceTree = "<group>"; };
+		02E4A20B1B34110A009B8A0F /* HILBartWebDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HILBartWebDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E4A2111B34110A009B8A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F7BC191B32A67200E2A7F7 /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = SOURCE_ROOT; };
 		02F7BC1D1B32A7E100E2A7F7 /* Arrival-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Arrival-Bridging-Header.h"; sourceTree = "<group>"; };
 		02F7BC211B32B99E00E2A7F7 /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwipeView.h; path = SwipeView/SwipeView/SwipeView.h; sourceTree = SOURCE_ROOT; };
@@ -167,8 +155,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E4A1BC1B33FACD009B8A0F /* HILBartWebData.framework in Frameworks */,
 				9D6F281437D28A43A28159A0 /* libPods-Arrival.a in Frameworks */,
+				02E4A21A1B34113E009B8A0F /* libHILBartWebData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,18 +167,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02E4A1A11B33FACD009B8A0F /* Frameworks */ = {
+		02E4A1FE1B34110A009B8A0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02E4A1AC1B33FACD009B8A0F /* Frameworks */ = {
+		02E4A2081B34110A009B8A0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E4A1B01B33FACD009B8A0F /* HILBartWebData.framework in Frameworks */,
+				02E4A20C1B34110A009B8A0F /* libHILBartWebData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E4A1C71B33FB63009B8A0F /* HILBartWebData.framework in Frameworks */,
+				02E4A21B1B34114B009B8A0F /* libHILBartWebData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +200,8 @@
 				0223DD241B32A2CD00E33B8C /* ArrivalTests */,
 				629BE7471B33F639000CBBEC /* Arrival WatchKit Extension */,
 				629BE7591B33F639000CBBEC /* Arrival WatchKit App */,
-				02E4A1A61B33FACD009B8A0F /* HILBartWebData */,
-				02E4A1B51B33FACD009B8A0F /* HILBartWebDataTests */,
+				02E4A2021B34110A009B8A0F /* HILBartWebData */,
+				02E4A20F1B34110A009B8A0F /* HILBartWebDataTests */,
 				0223DD0D1B32A2CD00E33B8C /* Products */,
 				E140E314C3A3E246DEF7282B /* Pods */,
 				B4A77F4ACAC88896AA247AE4 /* Frameworks */,
@@ -227,8 +215,8 @@
 				0223DD211B32A2CD00E33B8C /* ArrivalTests.xctest */,
 				629BE7461B33F639000CBBEC /* Arrival WatchKit Extension.appex */,
 				629BE7551B33F639000CBBEC /* Arrival WatchKit App.app */,
-				02E4A1A51B33FACD009B8A0F /* HILBartWebData.framework */,
-				02E4A1AF1B33FACD009B8A0F /* HILBartWebDataTests.xctest */,
+				02E4A2011B34110A009B8A0F /* libHILBartWebData.a */,
+				02E4A20B1B34110A009B8A0F /* HILBartWebDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,37 +265,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		02E4A1A61B33FACD009B8A0F /* HILBartWebData */ = {
+		02E4A2021B34110A009B8A0F /* HILBartWebData */ = {
 			isa = PBXGroup;
 			children = (
-				02E4A1A91B33FACD009B8A0F /* HILBartWebData.h */,
-				02E4A1C51B33FB3C009B8A0F /* HILBartData.swift */,
-				02E4A1A71B33FACD009B8A0F /* Supporting Files */,
+				02E4A1CC1B3409F4009B8A0F /* XMLDictionary.h */,
+				02E4A1CD1B3409F4009B8A0F /* XMLDictionary.m */,
+				02E4A1D11B340A9C009B8A0F /* HILBartData.h */,
+				02E4A1D21B340A9C009B8A0F /* HILBartData.m */,
+				02E4A2031B34110A009B8A0F /* HILBartWebData.h */,
+				02E4A2051B34110A009B8A0F /* HILBartWebData.m */,
 			);
 			path = HILBartWebData;
 			sourceTree = "<group>";
 		};
-		02E4A1A71B33FACD009B8A0F /* Supporting Files */ = {
+		02E4A20F1B34110A009B8A0F /* HILBartWebDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				02E4A1A81B33FACD009B8A0F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		02E4A1B51B33FACD009B8A0F /* HILBartWebDataTests */ = {
-			isa = PBXGroup;
-			children = (
-				02E4A1B81B33FACD009B8A0F /* HILBartWebDataTests.swift */,
-				02E4A1B61B33FACD009B8A0F /* Supporting Files */,
+				02E4A2101B34110A009B8A0F /* Supporting Files */,
 			);
 			path = HILBartWebDataTests;
 			sourceTree = "<group>";
 		};
-		02E4A1B61B33FACD009B8A0F /* Supporting Files */ = {
+		02E4A2101B34110A009B8A0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				02E4A1B71B33FACD009B8A0F /* Info.plist */,
+				02E4A2111B34110A009B8A0F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -370,17 +352,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		02E4A1A21B33FACD009B8A0F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02E4A1AA1B33FACD009B8A0F /* HILBartWebData.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		0223DD0B1B32A2CD00E33B8C /* Arrival */ = {
 			isa = PBXNativeTarget;
@@ -398,7 +369,6 @@
 			);
 			dependencies = (
 				629BE7621B33F639000CBBEC /* PBXTargetDependency */,
-				02E4A1BB1B33FACD009B8A0F /* PBXTargetDependency */,
 			);
 			name = Arrival;
 			productName = Arrival;
@@ -423,14 +393,13 @@
 			productReference = 0223DD211B32A2CD00E33B8C /* ArrivalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		02E4A1A41B33FACD009B8A0F /* HILBartWebData */ = {
+		02E4A2001B34110A009B8A0F /* HILBartWebData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02E4A1C21B33FACD009B8A0F /* Build configuration list for PBXNativeTarget "HILBartWebData" */;
+			buildConfigurationList = 02E4A2121B34110A009B8A0F /* Build configuration list for PBXNativeTarget "HILBartWebData" */;
 			buildPhases = (
-				02E4A1A01B33FACD009B8A0F /* Sources */,
-				02E4A1A11B33FACD009B8A0F /* Frameworks */,
-				02E4A1A21B33FACD009B8A0F /* Headers */,
-				02E4A1A31B33FACD009B8A0F /* Resources */,
+				02E4A1FD1B34110A009B8A0F /* Sources */,
+				02E4A1FE1B34110A009B8A0F /* Frameworks */,
+				02E4A1FF1B34110A009B8A0F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -438,26 +407,25 @@
 			);
 			name = HILBartWebData;
 			productName = HILBartWebData;
-			productReference = 02E4A1A51B33FACD009B8A0F /* HILBartWebData.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 02E4A2011B34110A009B8A0F /* libHILBartWebData.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		02E4A1AE1B33FACD009B8A0F /* HILBartWebDataTests */ = {
+		02E4A20A1B34110A009B8A0F /* HILBartWebDataTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02E4A1C41B33FACD009B8A0F /* Build configuration list for PBXNativeTarget "HILBartWebDataTests" */;
+			buildConfigurationList = 02E4A2151B34110A009B8A0F /* Build configuration list for PBXNativeTarget "HILBartWebDataTests" */;
 			buildPhases = (
-				02E4A1AB1B33FACD009B8A0F /* Sources */,
-				02E4A1AC1B33FACD009B8A0F /* Frameworks */,
-				02E4A1AD1B33FACD009B8A0F /* Resources */,
+				02E4A2071B34110A009B8A0F /* Sources */,
+				02E4A2081B34110A009B8A0F /* Frameworks */,
+				02E4A2091B34110A009B8A0F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				02E4A1B21B33FACD009B8A0F /* PBXTargetDependency */,
-				02E4A1B41B33FACD009B8A0F /* PBXTargetDependency */,
+				02E4A20E1B34110A009B8A0F /* PBXTargetDependency */,
 			);
 			name = HILBartWebDataTests;
 			productName = HILBartWebDataTests;
-			productReference = 02E4A1AF1B33FACD009B8A0F /* HILBartWebDataTests.xctest */;
+			productReference = 02E4A20B1B34110A009B8A0F /* HILBartWebDataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		629BE7451B33F639000CBBEC /* Arrival WatchKit Extension */ = {
@@ -473,7 +441,6 @@
 			);
 			dependencies = (
 				629BE7581B33F639000CBBEC /* PBXTargetDependency */,
-				02E4A1CA1B33FB63009B8A0F /* PBXTargetDependency */,
 			);
 			name = "Arrival WatchKit Extension";
 			productName = "Arrival WatchKit Extension";
@@ -511,12 +478,11 @@
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 0223DD0B1B32A2CD00E33B8C;
 					};
-					02E4A1A41B33FACD009B8A0F = {
+					02E4A2001B34110A009B8A0F = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					02E4A1AE1B33FACD009B8A0F = {
+					02E4A20A1B34110A009B8A0F = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 0223DD0B1B32A2CD00E33B8C;
 					};
 					629BE7451B33F639000CBBEC = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -543,8 +509,8 @@
 				0223DD201B32A2CD00E33B8C /* ArrivalTests */,
 				629BE7451B33F639000CBBEC /* Arrival WatchKit Extension */,
 				629BE7541B33F639000CBBEC /* Arrival WatchKit App */,
-				02E4A1A41B33FACD009B8A0F /* HILBartWebData */,
-				02E4A1AE1B33FACD009B8A0F /* HILBartWebDataTests */,
+				02E4A2001B34110A009B8A0F /* HILBartWebData */,
+				02E4A20A1B34110A009B8A0F /* HILBartWebDataTests */,
 			);
 		};
 /* End PBXProject section */
@@ -567,14 +533,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02E4A1A31B33FACD009B8A0F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		02E4A1AD1B33FACD009B8A0F /* Resources */ = {
+		02E4A2091B34110A009B8A0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -654,19 +613,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02E4A1A01B33FACD009B8A0F /* Sources */ = {
+		02E4A1FD1B34110A009B8A0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E4A1C61B33FB3C009B8A0F /* HILBartData.swift in Sources */,
+				02E4A2191B341121009B8A0F /* HILBartData.m in Sources */,
+				02E4A2061B34110A009B8A0F /* HILBartWebData.m in Sources */,
+				02E4A2181B34111F009B8A0F /* XMLDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02E4A1AB1B33FACD009B8A0F /* Sources */ = {
+		02E4A2071B34110A009B8A0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E4A1B91B33FACD009B8A0F /* HILBartWebDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,25 +648,10 @@
 			target = 0223DD0B1B32A2CD00E33B8C /* Arrival */;
 			targetProxy = 0223DD221B32A2CD00E33B8C /* PBXContainerItemProxy */;
 		};
-		02E4A1B21B33FACD009B8A0F /* PBXTargetDependency */ = {
+		02E4A20E1B34110A009B8A0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 02E4A1A41B33FACD009B8A0F /* HILBartWebData */;
-			targetProxy = 02E4A1B11B33FACD009B8A0F /* PBXContainerItemProxy */;
-		};
-		02E4A1B41B33FACD009B8A0F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0223DD0B1B32A2CD00E33B8C /* Arrival */;
-			targetProxy = 02E4A1B31B33FACD009B8A0F /* PBXContainerItemProxy */;
-		};
-		02E4A1BB1B33FACD009B8A0F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 02E4A1A41B33FACD009B8A0F /* HILBartWebData */;
-			targetProxy = 02E4A1BA1B33FACD009B8A0F /* PBXContainerItemProxy */;
-		};
-		02E4A1CA1B33FB63009B8A0F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 02E4A1A41B33FACD009B8A0F /* HILBartWebData */;
-			targetProxy = 02E4A1C91B33FB63009B8A0F /* PBXContainerItemProxy */;
+			target = 02E4A2001B34110A009B8A0F /* HILBartWebData */;
+			targetProxy = 02E4A20D1B34110A009B8A0F /* PBXContainerItemProxy */;
 		};
 		629BE7581B33F639000CBBEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -752,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -797,6 +743,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -836,6 +783,7 @@
 			baseConfigurationReference = 25160507B30A5A8728E21878 /* Pods-Arrival.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = Arrival/Info.plist;
@@ -851,6 +799,7 @@
 			baseConfigurationReference = A3000C780B373F0BEDD049BA /* Pods-Arrival.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = Arrival/Info.plist;
@@ -894,50 +843,29 @@
 			};
 			name = Release;
 		};
-		02E4A1BE1B33FACD009B8A0F /* Debug */ = {
+		02E4A2131B34110A009B8A0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = HILBartWebData/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		02E4A1BF1B33FACD009B8A0F /* Release */ = {
+		02E4A2141B34110A009B8A0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HILBartWebData/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		02E4A1C01B33FACD009B8A0F /* Debug */ = {
+		02E4A2161B34110A009B8A0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -951,11 +879,10 @@
 				INFOPLIST_FILE = HILBartWebDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arrival.app/Arrival";
 			};
 			name = Debug;
 		};
-		02E4A1C11B33FACD009B8A0F /* Release */ = {
+		02E4A2171B34110A009B8A0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -965,13 +892,13 @@
 				INFOPLIST_FILE = HILBartWebDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arrival.app/Arrival";
 			};
 			name = Release;
 		};
 		629BE7641B33F639000CBBEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -986,6 +913,7 @@
 		629BE7651B33F639000CBBEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				INFOPLIST_FILE = "Arrival WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -1055,19 +983,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02E4A1C21B33FACD009B8A0F /* Build configuration list for PBXNativeTarget "HILBartWebData" */ = {
+		02E4A2121B34110A009B8A0F /* Build configuration list for PBXNativeTarget "HILBartWebData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E4A1BE1B33FACD009B8A0F /* Debug */,
-				02E4A1BF1B33FACD009B8A0F /* Release */,
+				02E4A2131B34110A009B8A0F /* Debug */,
+				02E4A2141B34110A009B8A0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		02E4A1C41B33FACD009B8A0F /* Build configuration list for PBXNativeTarget "HILBartWebDataTests" */ = {
+		02E4A2151B34110A009B8A0F /* Build configuration list for PBXNativeTarget "HILBartWebDataTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E4A1C01B33FACD009B8A0F /* Debug */,
-				02E4A1C11B33FACD009B8A0F /* Release */,
+				02E4A2161B34110A009B8A0F /* Debug */,
+				02E4A2171B34110A009B8A0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
